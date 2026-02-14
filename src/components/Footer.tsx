@@ -1,8 +1,17 @@
+import Ballpit from "./BallPit";
 import Click from "./Click";
 
 const Footer = () => {
   return (
     <div className="bg-light-blue relative h-dvh">
+      <Ballpit
+        count={80}
+        gravity={0.5}
+        friction={1}
+        wallBounce={1}
+        followCursor
+      />
+
       <div className="absolute inset-0 flex items-center justify-center">
         <svg
           width="1232"
@@ -68,7 +77,7 @@ const Footer = () => {
           </defs>
         </svg>
       </div>
-      <div className="absolute bottom-16 flex w-full items-center justify-between px-16">
+      <div className="absolute top-16 flex w-full items-center justify-between px-16">
         <p className="sm font-medium!">© 2024 Qaumly. All rights reserved.</p>
         <p className="sm font-medium!">
           Website Designed and Developed by{" "}

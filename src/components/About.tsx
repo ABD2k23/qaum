@@ -26,7 +26,7 @@ const About = () => {
         </div>
       </div>
 
-      <ElectricBorder color="#2042b4" speed={0.2} chaos={0.1} thickness={1}>
+      <ElectricBorder color="#61B329" speed={0.2} chaos={0.1} thickness={1}>
         <div className="w-screen"></div>
       </ElectricBorder>
     </div>
