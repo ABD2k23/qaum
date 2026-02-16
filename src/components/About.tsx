@@ -4,7 +4,7 @@ import { Skiper48 } from "./Skiper-1";
 
 const About = () => {
   return (
-    <div className="w-full overflow-x-clip">
+    <div className="bg-back-red w-full overflow-x-clip">
       <div className="flex flex-col items-start justify-center gap-16 px-[64px] py-[96px]">
         <h2>
           Join Qaumly For Fun <br /> Quizzes And Earn <br /> Points While <br />

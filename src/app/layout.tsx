@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Vend_Sans } from "next/font/google";
 import Loader from "@/components/Loader";
 import "./globals.css";
+import SmoothScroll from "@/components/SmoothScroll";
 
 const vendSans = Vend_Sans({
   variable: "--font-vend",
@@ -24,7 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${vendSans.className} antialiased`}>
         <Loader />
-        {children}
+        <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
   );

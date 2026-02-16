@@ -24,6 +24,11 @@
   --color-low-red: #e3abb0;
   --color-low-green: #c0eaa4;
 
+  /* bgs */
+  --color-back-red: rgba(252, 247, 248, 1);
+  --color-back-blue: rgba(246, 248, 253, 1);
+  --color-back-green: rgba(249, 253, 247, 1);
+
   /* 4 */
   /* --color-4-blue: rgba(32, 66, 180, 0.04);
   --color-4-red: rgba(97, 179, 41, 0.04);
@@ -209,4 +214,27 @@ p {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Lenis */
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
 }

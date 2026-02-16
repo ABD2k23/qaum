@@ -7,7 +7,7 @@ const Leaderboard = () => {
     { position: 3, name: "Hamad Ali", score: 51 },
   ];
   return (
-    <div className="flex flex-col items-center justify-center gap-16 py-[96px]">
+    <div className="bg-back-green flex flex-col items-center justify-center gap-16 py-[96px]">
       <h2 className="text-center">Live Leaderboard!</h2>
       <div className="flex w-full flex-col items-center justify-center gap-8">
         {data.map((item) => (
@@ -24,9 +24,9 @@ const Leaderboard = () => {
               <h4>{item.name}</h4>
             </div>
             <div className="flex items-center justify-center gap-4">
-              <p className="big_link font-bold!">Total Score </p>
+              {/* <p className="big_link font-bold!">Total Score </p> */}
               <p
-                className={`sm squircle rounded-[16px] p-2 ${item.position === 1 ? "bg-low-red" : item.position === 2 ? "bg-low-blue" : item.position === 3 ? "bg-low-green" : "border border-black"}`}
+                className={`squircle rounded-[16px] p-2 px-3 font-bold! text-white ${item.position === 1 ? "bg-red" : item.position === 2 ? "bg-blue" : item.position === 3 ? "bg-green" : "border border-black text-black!"}`}
               >
                 {item.score} out of 60
               </p>

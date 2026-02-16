@@ -55,7 +55,7 @@ const Features = () => {
   // }, []);
 
   return (
-    <div className="features-move flex w-full flex-col items-center justify-center overflow-x-clip pb-[96px]">
+    <div className="features-move bg-back-red flex w-full flex-col items-center justify-center overflow-x-clip pb-[96px]">
       <ElectricBorder color="#b33c46" speed={0.2} chaos={0.1} thickness={1}>
         <div className="w-screen"></div>
       </ElectricBorder>
@@ -69,7 +69,7 @@ const Features = () => {
         {features.map((feature, index) => (
           <div
             key={index}
-            className={`group squircle relative flex cursor-crosshair flex-col items-start justify-center gap-4 rounded-[32px] p-[32px] ${
+            className={`group squircle relative flex cursor-crosshair flex-col items-start justify-center gap-4 rounded-[16px] p-[32px] ${
               feature.tone === "red"
                 ? "bg-light-red border-low-red border"
                 : feature.tone === "blue"

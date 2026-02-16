@@ -1,11 +1,9 @@
-import Ballpit from "./BallPit";
 import Button from "./Button";
 import ElectricBorder from "./ElectricBorder";
-import FloatingLines from "./FloatingLines";
 
 const CTA = () => {
   return (
-    <div className="bg-low-blue h-dvh overflow-x-clip">
+    <div className="bg-back-blue h-dvh overflow-x-clip">
       <div
         style={{
           position: "relative",
@@ -13,24 +11,7 @@ const CTA = () => {
         }}
         className="h-dvh"
       >
-        {/* <Ballpit
-          count={80}
-          gravity={0.5}
-          friction={1}
-          wallBounce={1}
-          followCursor
-        /> */}
-        <FloatingLines
-          color="rgba(248, 249, 250, 1)"
-          enabledWaves={["middle"]}
-          lineCount={3}
-          lineDistance={100}
-          bendRadius={30}
-          bendStrength={15}
-          interactive={false}
-          parallax={false}
-        />
-        <div className="absolute inset-0 z-10 flex flex-col items-center justify-end">
+        <div className="absolute inset-0 z-10 flex flex-col items-center justify-start">
           <ElectricBorder color="#2042b4" speed={0.2} chaos={0.1} thickness={1}>
             <div className="w-screen"></div>
           </ElectricBorder>

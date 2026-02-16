@@ -63,7 +63,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="flex flex-col gap-[64px]">
+    <div className="bg-back-green flex flex-col gap-[64px]">
       <div className="flex flex-col items-start justify-center gap-[64px] overflow-clip px-[64px] py-[96px]">
         <h1>Happy Voices</h1>
 
@@ -79,17 +79,17 @@ const Testimonials = () => {
 
               const cardStyle =
                 colorIndex === 0
-                  ? "bg-light-red border-red"
+                  ? "bg-light-red border-low-red"
                   : colorIndex === 1
-                    ? "bg-light-blue border-blue"
-                    : "bg-light-green border-green";
+                    ? "bg-light-blue border-low-blue"
+                    : "bg-light-green border-low-green";
 
               return (
                 <div
                   key={index} // Using index as key is safer here if 'count' isn't unique
                   className={`squircle flex h-[320px] w-[480px] shrink-0 flex-col items-start justify-between gap-4 rounded-[32px] border p-8 transition-all duration-500 ${cardStyle}`}
                 >
-                  <p>{test.description}</p>
+                  <p className="font-medium!">{test.description}</p>
                   <h3>{test.name}</h3>
                 </div>
               );
@@ -101,7 +101,7 @@ const Testimonials = () => {
           {/* Prev Button */}
           <div
             onClick={prevSlide}
-            className="squircle group hover:bg-blue flex h-16 w-16 cursor-pointer items-center justify-center rounded-[1000px] border border-black transition-all duration-200"
+            className="squircle group bg-light-blue hover:bg-blue flex h-16 w-16 cursor-pointer items-center justify-center rounded-[1000px] border border-black transition-all duration-200"
           >
             <svg
               width="18"
@@ -120,7 +120,7 @@ const Testimonials = () => {
           {/* Next Button */}
           <div
             onClick={nextSlide}
-            className="squircle group hover:bg-red flex h-16 w-16 cursor-pointer items-center justify-center rounded-[1000px] border border-black transition-all duration-200"
+            className="squircle group bg-light-red hover:bg-red flex h-16 w-16 cursor-pointer items-center justify-center rounded-[1000px] border border-black transition-all duration-200"
           >
             <svg
               width="18"
