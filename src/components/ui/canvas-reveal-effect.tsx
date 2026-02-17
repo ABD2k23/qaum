@@ -11,8 +11,10 @@ export const CanvasRevealEffect = ({
   containerClassName,
   dotSize,
   showGradient = true,
+  tone,
 }: {
   animationSpeed?: number;
+  tone: "red" | "blue" | "green";
   opacities?: number[];
   colors?: number[][];
   containerClassName?: string;
@@ -38,7 +40,9 @@ export const CanvasRevealEffect = ({
         />
       </div>
       {showGradient && (
-        <div className="absolute inset-0 bg-gradient-to-t from-gray-950 to-[84%]" />
+        <div
+          className={`from-light-${tone} absolute inset-0 bg-linear-to-t to-84%`}
+        />
       )}
     </div>
   );

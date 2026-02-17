@@ -3,7 +3,7 @@ import Click from "./Click";
 
 const Footer = () => {
   return (
-    <div className="bg-bg-blue relative h-dvh">
+    <div className="bg-back-blue relative h-dvh">
       <Ballpit
         count={80}
         gravity={0.5}
